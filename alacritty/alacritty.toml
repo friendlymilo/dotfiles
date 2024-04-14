@@ -1,0 +1,11 @@
+[window]
+opacity = 0.5
+blur = true
+padding = { x = 8, y = 8 }
+
+[font]
+normal = { family = "jetbrains mono", style = "regular" }
+size = 10
+
+[colors.primary]
+background = "#000000"
