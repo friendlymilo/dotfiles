@@ -43,9 +43,11 @@ active-light = #313435
 [bar/example]
 tray-position = right
 width =  100%
-height = 18
-padding-left =1
-padding-right =0
+height = 22
+padding-left = 5
+padding-right = 5
+
+radius = 8
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -54,13 +56,15 @@ border-top-size = 5
 border-bottom-size = 5
 border-top-color = ${colors.background}
 border-bottom-color = ${colors.background}
+border-left-size = 8
+border-right-size = 8
 
 line-size = 1
 wm-restack = bspwm
 
-modules-left = round-left bspwm round-right empty-space  round-left polywins round-right
+modules-left = round-left bspwm round-right empty-space round-left polywins round-right
 modules-center =  
-modules-right = alsa round-left cpu round-right updates wlan mem xbacklight round-left time  round-right  powermenu
+modules-right = alsa round-left cpu round-right mem round-left time  round-right  powermenu
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=9;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Bold:size=9;3
@@ -126,22 +130,21 @@ reverse-scroll = false
 
 format = <label-state>
 
-ws-icon-0 = 1;%{F#F9DE8F}  
-ws-icon-1 = 2;%{F#ff9b93}   
-ws-icon-2 = 3;%{F#95e1d3}    
+ws-icon-0 = 1;%{F#F9DE8F} 
+ws-icon-1 = 2;%{F#ff9b93}   
+ws-icon-2 = 3;%{F#95e1d3}    
 ws-icon-3 = 4;%{F#81A1C1}
-ws-icon-4 = 5;%{F#A3BE8C}
 
 label-separator = " "
 label-separator-background = #2a2e36
 
-label-focused =  %icon%  
+label-focused = %icon%  
 label-focused-foreground = ${colors.foreground}
-label-focused-padding = 1
+label-focused-padding = 2
 label-focused-background = #464a52
 label-focused-margin = 0 
 
-label-occupied =  %icon%  
+label-occupied = %icon%  
 label-occupied-foreground = #646870  
 label-occupied-background = #2a2e36
 label-occupied-padding = 1
